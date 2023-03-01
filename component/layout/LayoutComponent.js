@@ -1,10 +1,13 @@
+import { Stack } from "@mui/material"
 import React from "react"
 import FooterComponent from "./FooterComponent"
 import HeaderComponent from "./HeaderComponent"
 const LayoutComponent = ({ children }) => {
   return (
     <>
-      <HeaderComponent />
+     <Stack py={4}>
+     <HeaderComponent />
+     </Stack>
       {children}
       <FooterComponent />
     </>
