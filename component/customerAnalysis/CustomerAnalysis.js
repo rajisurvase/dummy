@@ -3,11 +3,11 @@ import React from 'react'
 
 const CustomerAnalysis = () => {
     return (
-        <Grid container  sx={{ px: { xs: 4, md: 10 }, py:{xs : 0,md:4} }}>
+        <Grid container  sx={{ px: { xs: 4, md: 10 }, py:{xs : 0,md:2} }}>
             <Grid item xs={12} md={7} >
                 <Box p={8} borderRadius={5} display="flex" justifyContent="space-around" style={{ background: 'linear-gradient(to right bottom, #FF5D31, #FF5B2E)' }} >
-                    <Stack display="flex"  >
-                        <Typography textAlign="center" >Adopted</Typography>
+                    <Stack>
+                        <Typography >Adopted</Typography>
                         <Typography>2500+</Typography>
                     </Stack>
                     <hr />

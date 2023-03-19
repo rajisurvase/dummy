@@ -4,7 +4,7 @@ import { Avatar, Box, Button, Card, CardActions, CardContent, Grid, Paper, Typog
 const TrainerComponent = () => {
   return (
     <Box sx={{ px: { xs: 4, md: 10 }, py: { xs: 0, md: 4 }, backgroundColor: "#ffefde" }}>
-            <Typography textAlign='center' sx={{ fontWeight: "bolder" }} fontFamily='Monospace' fontSize={40} fontWeight={50} color="000000" >Our Groomers</Typography>
+            <Typography textAlign='center' sx={{ fontWeight: "bolder" }} fontFamily='Monospace' fontSize={35} fontWeight={50} color="000000" >Our Groomers</Typography>
             <Grid container spacing={4} pt={2} >
                 <Grid item xs={12} sm={6} md={3} lg={3} textAlign="center"  >
                     <Card sx={{ borderRadius: '16px', mb: { xs: 0, md: 5 } }} >

@@ -6,7 +6,7 @@ const FacilityComponent = () => {
     <Box sx={{ px: { xs: 4, md: 10 }, py:{xs : 0,md:4}, backgroundColor:"#fcf4eb" }} >
         <Grid container alignItems='center' >
             <Grid item xs={12} md={5} >
-               <Typography textAlign='center' sx={{ fontWeight: "bolder" }} fontFamily='Monospace' fontSize={40} fontWeight={50} color="000000">Facilities We Provides</Typography>
+               <Typography textAlign='center' sx={{ fontWeight: "bolder" }} fontFamily='Monospace' fontSize={35} fontWeight={50} color="000000">Facilities We Provides</Typography>
             </Grid>
             <Grid item xs={12} md={7} >
                 <Typography>
