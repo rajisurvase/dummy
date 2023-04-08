@@ -1,6 +1,7 @@
 import { Box, Button, Grid, IconButton, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
+import Link from 'next/link';
 
 const HeaderComponent = () => {
     const [open, setOpen] = useState(false)
@@ -15,7 +16,9 @@ const HeaderComponent = () => {
                         <Typography fontFamily='Monospace' fontSize={25} fontWeight="bold" color="000000" >Mew</Typography>
                     </Grid>
                     <Grid item display={"flex"} justifyContent="space-around" md={4} lg={4}>
-                        <Typography >Home</Typography>
+                       <Link href="/home">
+                          <Typography >Home</Typography>
+                       </Link>
                         <Typography>About</Typography>
                         <Typography>Service</Typography>
                         <Typography>Facilities</Typography>
