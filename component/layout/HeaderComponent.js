@@ -2,8 +2,11 @@ import { Box, Button, Grid, IconButton, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
 import Link from 'next/link';
+import { signIn, useSession } from 'next-auth/react';
 
 const HeaderComponent = () => {
+    const { data: session } = useSession()
+    console.log("data",session)
     const [open, setOpen] = useState(false)
     const handleOpen = () => {
         setOpen(!open)
@@ -24,7 +27,7 @@ const HeaderComponent = () => {
                         <Typography>Facilities</Typography>
                     </Grid>
                     <Grid textAlign={"right"} item md={4} lg={4}>
-                        <Button variant='outlined' >sign up</Button>
+                        <Button variant='outlined' onClick={() => {signIn();}} >sign up</Button>
                     </Grid>
                 </Grid>
             </Box>
