@@ -22,9 +22,15 @@ const HeaderComponent = () => {
                        <Link href="/home">
                           <Typography >Home</Typography>
                        </Link>
+                       <Link href="/about">
                         <Typography>About</Typography>
+                        </Link>
+                        <Link href="/services">
                         <Typography>Service</Typography>
+                        </Link>
+                        <Link href="/facilities">
                         <Typography>Facilities</Typography>
+                        </Link>
                     </Grid>
                     <Grid textAlign={"right"} item md={4} lg={4}>
                         <Button variant='outlined' onClick={() => {signIn();}} >sign up</Button>
