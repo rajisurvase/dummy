@@ -3,6 +3,8 @@ import { signIn } from "next-auth/react";
 import { useRouter } from "next/router";
 import React from "react";
 import { useState } from "react";
+import Box from "@mui/material/Box";
+import { Card, Grid, TextField, Typography } from "@mui/material";
 
 const SignIn= () => {
   const [userInfo, setUserInfo] = useState({ email: "", password: "" });
@@ -22,7 +24,21 @@ const SignIn= () => {
   };
   return (
     <div className="sign-in-form">
-      <form onSubmit={handleSubmit}>
+ <Box>
+      <Grid container spacing={2}>
+        <Grid item xs={12} md={3}></Grid>
+        <Grid item xs={12} md={6}>
+          <Card >
+            <Typography p={3} textAlign={"center"}>Login</Typography>
+          <TextField  p={3} id="outlined-basic" label="Email" variant="outlined" />
+
+          </Card>
+        </Grid>
+        <Grid item xs={12} md={3}></Grid>
+      </Grid>
+    </Box>
+ 
+      {/* <form onSubmit={handleSubmit}>
         <h1>Login</h1>
         <input
           value={userInfo.email}
@@ -41,7 +57,7 @@ const SignIn= () => {
           placeholder="********"
         />
         <input type="submit" value="Login" />
-      </form>
+      </form> */}
     </div>
   );
 };
