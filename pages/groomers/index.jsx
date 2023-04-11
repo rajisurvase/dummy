@@ -156,12 +156,12 @@ const Groomers = () => {
                           <div style={{ justifyContent: "center", display: "flex" }}>
                           <Avatar 
                              alt="Mouran Maz"
-                              src="https://www.shutterstock.com/image-photo/woman-smiling-perfect-smile-418038124"
+                              src="https://img.freepik.com/premium-photo/girl-with-glasses-holds-set-notebooks_274222-24335.jpg?w=1380"
                                sx={{ width: 150, height: 150 }}
                           />
                            </div>
                             <Typography fontWeight='600' fontFamily= 'Poppins' variant="h6" pt={2} component="div">
-                            Anjali Sharma
+                            Anjali Naragude
                             </Typography>
 
                             <Typography variant="body2">
@@ -176,7 +176,7 @@ const Groomers = () => {
                           <div style={{ justifyContent: "center", display: "flex" }}>
                           <Avatar 
                              alt="Morgan Mark"
-                              src="https://pps.whatsapp.net/v/t61.24694-24/340349463_600118588812810_3148407190670697096_n.jpg?ccb=11-4&oh=01_AdTOZHdkVp6cE-qzRohHz8P47s0Q7lEZBAcj-fDr2uSMRg&oe=64424F50"
+                              src="https://img.freepik.com/free-photo/smiling-doctor-with-strethoscope-isolated-grey_651396-974.jpg?w=1380&t=st=1681230832~exp=1681231432~hmac=22455e018844eb81417c1b4ad5a423cfe1a63fe2373b781977e55366ba7928e9"
                                sx={{ width: 150, height: 150 }}
                           />
                            </div>
@@ -196,12 +196,12 @@ const Groomers = () => {
                           <div style={{ justifyContent: "center", display: "flex" }}>
                           <Avatar 
                              alt="Morgan Mark"
-                              src="https://pps.whatsapp.net/v/t61.24694-24/340349463_600118588812810_3148407190670697096_n.jpg?ccb=11-4&oh=01_AdTOZHdkVp6cE-qzRohHz8P47s0Q7lEZBAcj-fDr2uSMRg&oe=64424F50"
+                              src="https://img.freepik.com/premium-photo/young-handsome-man-feeling-shocked-astonished-surprised-with-hand-chest-open-mouth_1194-141690.jpg?w=1380"
                                sx={{ width: 150, height: 150 }}
                           />
                            </div>
                             <Typography fontWeight='600' fontFamily= 'Poppins' variant="h6" pt={2} component="div">
-                            Sid Kapur
+                            Siddhart Kapur
                             </Typography>
 
                             <Typography variant="body2">

@@ -3,7 +3,8 @@ import { Box, Button, Card, CardContent, Checkbox, FormControl, FormControlLabel
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useState } from 'react'
-
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
+import { pink } from '@mui/material/colors';
 const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false)
   const [userInfo, setUserInfo] = useState({ name: "", email: "", number: "", password: "", confirmPassword: "" });
@@ -13,13 +14,15 @@ const SignUp = () => {
   const handleSubmit = async (e) => {
     // validate your userinfo
     e.preventDefault();
-
-
-console.log(userInfo)
+     console.log(userInfo)
   }
-  function handleClickShowPassword() {
+  // const [showPassword, setShowPassword] = React.useState(false);
 
-  }
+  const handleClickShowPassword = () => setShowPassword((show) => !show);
+
+  const handleMouseDownPassword = (event) => {
+    event.preventDefault();
+  };
 
   return (
     <div>
@@ -60,9 +63,9 @@ console.log(userInfo)
                           <IconButton
                             aria-label="toggle password visibility"
                             onClick={handleClickShowPassword}
-                          //  onMouseDown={handleMouseDownPassword}
+                           onMouseDown={handleMouseDownPassword}
                           >
-                            {showPassword ? <VisibilityOff /> : <Visibility />}
+                            {showPassword ? <VisibilityOffIcon /> : <Visibility />}
                           </IconButton>
                         </InputAdornment>
                       }
@@ -82,9 +85,9 @@ console.log(userInfo)
                           <IconButton
                             aria-label="toggle password visibility"
                             onClick={handleClickShowPassword}
-                          //  onMouseDown={handleMouseDownPassword}
+                           onMouseDown={handleMouseDownPassword}
                           >
-                            {showPassword ? <VisibilityOff /> : <Visibility />}
+                            {showPassword ? <VisibilityOffIcon /> : <Visibility />}
                           </IconButton>
                         </InputAdornment>
                       }
@@ -92,13 +95,18 @@ console.log(userInfo)
                   </FormControl>
 
                   <FormGroup textAlign="left" sx={{ pt: 2 }}>
-                    <FormControlLabel control={<Checkbox defaultChecked />} label="I accept the terms and conditions" />
+                    <FormControlLabel  control={<Checkbox defaultChecked sx={{
+                    color: pink[800],
+                    '&.Mui-checked': {
+                        color: pink[600],
+                    },
+                }}  />} label="I accept the terms and conditions" />
 
                   </FormGroup>
 
-                  <Button fullWidth sx={{ mt: 2 }} variant="contained" type="submit">Sign up</Button>
-                  <Typography sx={{mt: 2}} textAlign="center">Already a user ?
-              <Link  href="/login" > Login </Link></Typography>
+                  <Button fullWidth sx={{ mt: 2,backgroundColor: "#FF5B2E" }} variant="contained" type="submit">Sign up</Button>
+                  <Typography sx={{mt: 2  }} textAlign="center">Already a user ?
+                  <Link  href="/login" > Login </Link></Typography>
                 </CardContent>
               </Card>
             </form>

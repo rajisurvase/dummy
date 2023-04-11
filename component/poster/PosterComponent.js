@@ -11,7 +11,9 @@ const PosterComponent = () => {
                 // height: "30vh",
                 borderRadius: "1rem"
             }} item xs={12} sm={12} md={4} lg={4}   >
+            <Box sx={{display: {md: "block" , xs : "none"}}} >
                 <img style={{ position: "absolute", width: "15%", left: "25%", top: "30%", borderRadius: "1rem" }} src="https://img.freepik.com/premium-photo/front-view-domestic-cute-dog-with-scarf_23-2148643145.jpg?w=2000" alt="alt" />
+            </Box>
             </Grid>
             <Grid item md={1} lg={1} xs={0} sm={0}></Grid>
             <Grid item xs={12} sm={12} md={7} lg={7}  >
