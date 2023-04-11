@@ -94,14 +94,16 @@ const SignUp = () => {
                     />
                   </FormControl>
 
-                  <FormGroup textAlign="left" sx={{ pt: 2 }}>
+                  <FormGroup textAlign="left" sx={{ pt: 2 }} display='flex' alignItem="center" >
                     <FormControlLabel  control={<Checkbox defaultChecked sx={{
                     color: pink[800],
                     '&.Mui-checked': {
                         color: pink[600],
                     },
-                }}  />} label="I accept the terms and conditions" />
-
+                }}  />} 
+                   label={<Typography>I accept the <Link href="/"> terms and conditions </Link></Typography>}
+                 />
+                
                   </FormGroup>
 
                   <Button fullWidth sx={{ mt: 2,backgroundColor: "#FF5B2E" }} variant="contained" type="submit">Sign up</Button>
