@@ -27,7 +27,18 @@ const SignIn= () => {
       router.push("/")
      }
      else{
-      alert("Invalid Credential")
+      if( userInfo.email && !userInfo.password)
+      {
+        alert("Password must be required")
+      }
+      else if(!userInfo.email && userInfo.password){
+
+        alert("User email must be required")
+      }
+      else{
+        alert("Invalid Credential")
+      }
+     
      }
   };
   const handleClickShowPassword=()=>{

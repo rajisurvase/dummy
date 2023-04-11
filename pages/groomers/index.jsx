@@ -2,7 +2,7 @@ import React from 'react'
 import { Avatar, Box, Button, Card, CardActions, CardContent, Grid, Paper, Typography } from '@mui/material'
 import Link from 'next/link'
 
-const TrainerComponent = () => {
+const Groomers = () => {
   return (
     <Box sx={{ px: { xs: 4, md: 10 }, py: { xs: 0, md: 4 }, backgroundColor: "#ffefde" }}>
             <Typography textAlign='center' sx={{ fontWeight: "bolder" }} fontFamily='Monospace' fontSize={35} fontWeight={50} color="000000" >Our Groomers</Typography>
@@ -88,11 +88,11 @@ const TrainerComponent = () => {
                     </Card>
                 </Grid>
             </Grid>
-            <Box textAlign="center" py={3} >
-           <Link href="/groomers"> <Button sx={{bgcolor:"#FF5B2E"}} variant='contained' >View Team</Button></Link>
-            </Box>
+            {/* <Box textAlign="center" py={3} > */}
+           {/* <Link href="/groomers"> <Button sx={{bgcolor:"#FF5B2E"}} variant='contained' >View Team</Button></Link> */}
+            {/* </Box> */}
     </Box>
   )
 }
 
-export default TrainerComponent
+export default Groomers
