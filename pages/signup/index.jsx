@@ -101,7 +101,7 @@ const SignUp = () => {
                         color: pink[600],
                     },
                 }}  />} 
-                   label={<Typography>I accept the <Link href="/"> terms and conditions </Link></Typography>}
+                   label={<Typography>I accept the <Link href="/terms_conditions"> terms and conditions </Link></Typography>}
                  />
                 
                   </FormGroup>

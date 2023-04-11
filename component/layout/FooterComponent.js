@@ -52,8 +52,13 @@ const FooterComponent = () => {
             {handleTypography('Useful links')}
              {handleFooter('FAQs')}
              {handleFooter('Shops')}
+             <Link href="/terms_conditions" style={{textDecoration: 'none'}}>
              {handleFooter(' Privacy Policy')}
+             </Link>
+             <Link href="/terms_conditions" style={{textDecoration: 'none'}}>
+ 
              {handleFooter(' Terms of Use')}
+             </Link>
              {handleFooter('Site Map')}
             </Grid>
             <Grid item xs={4}  >

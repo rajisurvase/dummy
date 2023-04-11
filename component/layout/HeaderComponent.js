@@ -76,10 +76,18 @@ const HeaderComponent = () => {
                     <Grid item xs={12} textAlign="center" >
                         {open && (
                             <>
+                             <Link href="/">
                                 <Typography py={0.5} > Home </Typography>
+                                </Link>
+                                <Link href="/about">
                                 <Typography py={0.5} >About</Typography>
+                                </Link>
+                                <Link href="/services">
                                 <Typography py={0.5} >Service</Typography>
+                                </Link>
+                                <Link href="/facilities">
                                 <Typography py={0.5} >Facilities</Typography>
+                                </Link>
                                 {session?.user?.name ?
                                     <Typography> Sign Out</Typography>
                                     : <Typography py={0.5} sx={{ cursor: "pointer" }} onClick={() => { signIn(); }} >Sign in</Typography>}
