@@ -49,7 +49,7 @@ const SignIn= () => {
     <div className="sign-in-form">
  <Box >
       <Grid container spacing={2}>
-        <Grid item xs={12} md={4}></Grid>
+        < Grid item xs={12} md={4}></Grid>
         <Grid item xs={12} md={4} textAlign={"center"} padding={3}>
           <form onSubmit={handleSubmit}>
           <Card >
@@ -59,8 +59,7 @@ const SignIn= () => {
           onChange={({ target }) =>
             setUserInfo({ ...userInfo, email: target.value })
           }/>
-            <br/>
-            <br/>
+            
             <FormControl fullWidth variant="standard">
           <InputLabel htmlFor="standard-adornment-password">Password</InputLabel>
           <Input
@@ -90,7 +89,7 @@ const SignIn= () => {
            
             <Button fullWidth sx={{mt: 2}} variant="contained" type="submit">Login</Button>
             <Typography sx={{mt: 2}} textAlign="left">
-              <Link  href="#" >Forgot Password ?</Link></Typography>
+              <Link  href="/forgot" >Forgot Password ?</Link></Typography>
             <Typography sx={{mt: 2}} textAlign="left">Do you have an account ?
               <Link  href="/signup" > Sign up </Link></Typography>  
             </CardContent>
@@ -101,26 +100,7 @@ const SignIn= () => {
       </Grid>
     </Box>
  
-      {/* <form onSubmit={handleSubmit}>
-        <h1>Login</h1>
-        <input
-          value={userInfo.email}
-          onChange={({ target }) =>
-            setUserInfo({ ...userInfo, email: target.value })
-          }
-          type="email"
-          placeholder="john@email.com"
-        />
-        <input
-          value={userInfo.password}
-          onChange={({ target }) =>
-            setUserInfo({ ...userInfo, password: target.value })
-          }
-          type="password"
-          placeholder="********"
-        />
-        <input type="submit" value="Login" />
-      </form> */}
+      
     </div>
   );
 };

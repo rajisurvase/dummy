@@ -87,6 +87,131 @@ const Groomers = () => {
                         </CardContent>
                     </Card>
                 </Grid>
+
+                <Grid item xs={12} sm={6} md={3} lg={3} textAlign="center"  >
+                    <Card sx={{ borderRadius: '16px', mb: { xs: 0, md: 5 } }} >
+                        <CardContent sx={{ bgcolor: '#FFE4C8' }} >
+                          <div style={{ justifyContent: "center", display: "flex" }}>
+                          <Avatar 
+                             alt="Morgan Mark"
+                              src="https://pps.whatsapp.net/v/t61.24694-24/340349463_600118588812810_3148407190670697096_n.jpg?ccb=11-4&oh=01_AdTOZHdkVp6cE-qzRohHz8P47s0Q7lEZBAcj-fDr2uSMRg&oe=64424F50"
+                               sx={{ width: 150, height: 150 }}
+                          />
+                           </div>
+                            <Typography fontWeight='600' fontFamily= 'Poppins' variant="h6" pt={2} component="div">
+                            Piraji Survase
+                            </Typography>
+
+                            <Typography variant="body2">
+                            Trainer
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </Grid>
+                <Grid item xs={12} sm={6} md={3} lg={3} textAlign="center"  >
+                    <Card sx={{ borderRadius: '16px', mb: { xs: 0, md: 5 } }} >
+                        <CardContent sx={{ bgcolor: '#FFE4C8' }} >
+                          <div style={{ justifyContent: "center", display: "flex" }}>
+                          <Avatar 
+                             alt="Mouran Maz"
+                              src="https://pps.whatsapp.net/v/t61.24694-24/340624669_948608422961099_1010399487687162542_n.jpg?ccb=11-4&oh=01_AdT3jaEJbOSnNvcGY8ALnI4kXbjwDfj9t8jMKrJt-qFgSQ&oe=644244D6"
+                               sx={{ width: 150, height: 150 }}
+                          />
+                           </div>
+                            <Typography fontWeight='600' fontFamily= 'Poppins' variant="h6" pt={2} component="div">
+                            Vishnu Reddy
+                            </Typography>
+
+                            <Typography variant="body2">
+                            Care Taker
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </Grid>
+
+
+                <Grid item xs={12} sm={6} md={3} lg={3} textAlign="center"  >
+                    <Card sx={{ borderRadius: '16px', mb: { xs: 0, md: 5 } }} >
+                        <CardContent sx={{ bgcolor: '#FFE4C8' }} >
+                          <div style={{ justifyContent: "center", display: "flex" }}>
+                          <Avatar 
+                             alt="Remy Sharp"
+                              src="https://pps.whatsapp.net/v/t61.24694-24/184140303_6116915645002756_4017228071664361179_n.jpg?ccb=11-4&oh=01_AdQaBDiL-T4yCv2gbTOBWRxQS2EkqZmswLNkPBq6eW-Lyg&oe=64425DA4"
+                               sx={{ width: 150, height: 150 }}
+                          />
+                           </div>
+                            <Typography fontWeight='600' fontFamily= 'Poppins' variant="h6" pt={2} component="div">
+                            Ram Smith
+                            </Typography>
+
+                            <Typography variant="body2">
+                            Veterinarian
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </Grid>
+                <Grid item xs={12} sm={6} md={3} lg={3} textAlign="center"  >
+                    <Card sx={{ borderRadius: '16px', mb: { xs: 0, md: 5 } }} >
+                        <CardContent sx={{ bgcolor: '#FFE4C8' }} >
+                          <div style={{ justifyContent: "center", display: "flex" }}>
+                          <Avatar 
+                             alt="Mouran Maz"
+                              src="https://www.shutterstock.com/image-photo/woman-smiling-perfect-smile-418038124"
+                               sx={{ width: 150, height: 150 }}
+                          />
+                           </div>
+                            <Typography fontWeight='600' fontFamily= 'Poppins' variant="h6" pt={2} component="div">
+                            Anjali Sharma
+                            </Typography>
+
+                            <Typography variant="body2">
+                            Care Taker
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </Grid>
+                <Grid item xs={12} sm={6} md={3} lg={3} textAlign="center"  >
+                    <Card sx={{ borderRadius: '16px', mb: { xs: 0, md: 5 } }} >
+                        <CardContent sx={{ bgcolor: '#FFE4C8' }} >
+                          <div style={{ justifyContent: "center", display: "flex" }}>
+                          <Avatar 
+                             alt="Morgan Mark"
+                              src="https://pps.whatsapp.net/v/t61.24694-24/340349463_600118588812810_3148407190670697096_n.jpg?ccb=11-4&oh=01_AdTOZHdkVp6cE-qzRohHz8P47s0Q7lEZBAcj-fDr2uSMRg&oe=64424F50"
+                               sx={{ width: 150, height: 150 }}
+                          />
+                           </div>
+                            <Typography fontWeight='600' fontFamily= 'Poppins' variant="h6" pt={2} component="div">
+                              Ashok Reddy
+                            </Typography>
+
+                            <Typography variant="body2">
+                            Trainer
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </Grid>
+                <Grid item xs={12} sm={6} md={3} lg={3} textAlign="center"  >
+                    <Card sx={{ borderRadius: '16px', mb: { xs: 0, md: 5 } }} >
+                        <CardContent sx={{ bgcolor: '#FFE4C8' }} >
+                          <div style={{ justifyContent: "center", display: "flex" }}>
+                          <Avatar 
+                             alt="Morgan Mark"
+                              src="https://pps.whatsapp.net/v/t61.24694-24/340349463_600118588812810_3148407190670697096_n.jpg?ccb=11-4&oh=01_AdTOZHdkVp6cE-qzRohHz8P47s0Q7lEZBAcj-fDr2uSMRg&oe=64424F50"
+                               sx={{ width: 150, height: 150 }}
+                          />
+                           </div>
+                            <Typography fontWeight='600' fontFamily= 'Poppins' variant="h6" pt={2} component="div">
+                            Sid Kapur
+                            </Typography>
+
+                            <Typography variant="body2">
+                            Trainer
+                            </Typography>
+                        </CardContent>
+                    </Card>
+                </Grid>
+                
+
             </Grid>
             {/* <Box textAlign="center" py={3} > */}
            {/* <Link href="/groomers"> <Button sx={{bgcolor:"#FF5B2E"}} variant='contained' >View Team</Button></Link> */}
