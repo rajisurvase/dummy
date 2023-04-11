@@ -1,4 +1,4 @@
-import { Box, Button, Divider, Grid, IconButton, Stack, Typography } from '@mui/material'
+import { Box, Button, Divider, Grid, IconButton, Link, Stack, Typography } from '@mui/material'
 import React from 'react'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -24,18 +24,26 @@ const FooterComponent = () => {
             Ut enim ad minim  velit esse cillum dolore eu fugiat nulla pariatur.
             </Typography>
             <div >
+            <Link href="https://www.facebook.com/">
               <IconButton>
                 <FacebookIcon color='primary' />
               </IconButton>
-              <IconButton>
+              </Link>
+             <Link href="https://twitter.com/"> <IconButton>
                 <TwitterIcon color='primary' />
               </IconButton>
+              </Link>
+              <Link href="https://www.linkedin.com/">
               <IconButton>
                 <LinkedInIcon color='primary' />
               </IconButton>
+              </Link>
+              
+              <Link href="https://www.instagram.com/"> 
               <IconButton>
                 <InstagramIcon color='error' />
               </IconButton>
+              </Link>
             </div>
         </Grid>
         <Grid item  xs={12} md={6} lg={6}>
