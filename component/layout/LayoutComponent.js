@@ -7,7 +7,7 @@ const LayoutComponent = ({ children }) => {
   const { data: session } = useSession()
   return (
     <>
-     <Stack py={4}>
+     <Stack py={2}>
       {/* {session  &&  <HeaderComponent />}  */}
       <HeaderComponent />
       </Stack>

@@ -14,16 +14,15 @@ const FooterComponent = () => {
   }
      
   return (
-    <Box sx={{ px: { xs: 4, md: 10 }, py: { xs: 0, md: 4 }, backgroundColor: "#ffefde" }}>
+    <Box sx={{ px: { xs: 4, md: 10 }, py: { xs: 1, md: 4 }, backgroundColor: "#ffefde" }}>
     <Grid container justifyContent="space-around" >
         <Grid item  xs={12} md={6} lg={6} >
-          
-          <div display={"flex"}  >
-        <Avatar  alt="Travis Howard" src="https://www.creativehatti.com/wp-content/uploads/2022/07/Pet-lover-vector-mascot-logo-template-55-small.jpg" />
-        </div>
-
-        <Typography fontFamily='Monospace' fontSize={25} fontWeight="bold" color="000000" >Mew</Typography>
-        
+        <Box sx={{display:"flex"}} alignItems='center' >
+          <div display={"flex"}   >
+             <Avatar sx={{width: 60, height: 60}}  alt="Travis Howard" src="https://www.creativehatti.com/wp-content/uploads/2022/07/Pet-lover-vector-mascot-logo-template-55-small.jpg" />
+          </div>
+          <Typography pl={4} fontFamily='Monospace' fontSize={25} fontWeight="bold" color="000000" >Mew</Typography>
+        </Box>
         <Typography py={2}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -93,7 +92,7 @@ const FooterComponent = () => {
     </Grid>
     <Divider /> 
      <Box>
-         <Typography py={2} textAlign={'center'}>Developed in 2023 | pirajisurvase</Typography>
+         <Typography py={2} textAlign={'center'}>Developed in 2023 | Anjali Naragude (Full Stack developer)</Typography>
      </Box>
 </Box>
 

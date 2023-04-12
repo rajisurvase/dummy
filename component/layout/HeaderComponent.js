@@ -24,10 +24,9 @@ const HeaderComponent = () => {
         <>
             <Box sx={{ display: { xs: 'none', md: 'block' } }}>
                 <Grid container  justifyContent="space-around" px={10} pt={1} alignItems="center" >
-                    <Grid item display={"flex"}  md={4} lg={4} >
-                    <Avatar  alt="Travis Howard" src="https://www.creativehatti.com/wp-content/uploads/2022/07/Pet-lover-vector-mascot-logo-template-55-small.jpg" />
-         
-                        <Typography fontFamily='Monospace' fontSize={25} fontWeight="bold" color="000000" >Mew</Typography>
+                    <Grid item display={"flex"} alignItems={'center'}  md={4} lg={4} >
+                      <Avatar sx={{ width: 80, height: 80 }}  alt="Travis Howard" src="https://www.creativehatti.com/wp-content/uploads/2022/07/Pet-lover-vector-mascot-logo-template-55-small.jpg" />
+                       <Typography fontFamily='Monospace' fontSize={25} fontWeight="bold" color="000000" >Mew</Typography>
                     </Grid>
                     <Grid item display={"flex"} justifyContent="space-around" md={4} lg={4}>
                         <Link href="/">
