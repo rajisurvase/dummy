@@ -1,4 +1,4 @@
-import { Box, Button, Divider, Grid, IconButton, Link, Stack, Typography } from '@mui/material'
+import { Avatar, Box, Button, Divider, Grid, IconButton, Link, Stack, Typography } from '@mui/material'
 import React from 'react'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -16,8 +16,14 @@ const FooterComponent = () => {
   return (
     <Box sx={{ px: { xs: 4, md: 10 }, py: { xs: 0, md: 4 }, backgroundColor: "#ffefde" }}>
     <Grid container justifyContent="space-around" >
-        <Grid item xs={12} md={6} lg={6} >
+        <Grid item  xs={12} md={6} lg={6} >
+          
+          <div display={"flex"}  >
+        <Avatar  alt="Travis Howard" src="https://www.creativehatti.com/wp-content/uploads/2022/07/Pet-lover-vector-mascot-logo-template-55-small.jpg" />
+        </div>
+
         <Typography fontFamily='Monospace' fontSize={25} fontWeight="bold" color="000000" >Mew</Typography>
+        
         <Typography py={2}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -69,7 +75,9 @@ const FooterComponent = () => {
             <Link href="/services" style={{textDecoration: 'none'}}>
             {handleFooter('Services')}
             </Link>
+            <Link href="/groomers" style={{textDecoration: 'none'}}>
             {handleFooter(' Our Team')}
+            </Link>
             {handleFooter(' Adopt Pet')}
             </Grid>
             <Grid item xs={4} >
@@ -78,8 +86,10 @@ const FooterComponent = () => {
             {handleFooter('654 White Avenue')}
             {handleFooter('Portland, TX 78374')}
             </Grid>
+            
            </Grid>
         </Grid>
+        
     </Grid>
     <Divider /> 
      <Box>

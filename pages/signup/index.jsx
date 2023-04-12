@@ -33,7 +33,10 @@ const SignUp = () => {
             <form onSubmit={handleSubmit}>
               <Card>
                 <CardContent>
-                  <Typography p={3} >Sign Up</Typography>
+                <div style={{ justifyContent: "center", display: "flex" }}>
+                <Avatar  alt="Travis Howard" src="https://www.creativehatti.com/wp-content/uploads/2022/07/Pet-lover-vector-mascot-logo-template-55-small.jpg" />
+                </div>
+                  <Typography >Sign Up</Typography>
                  
                   <TextField fullWidth id="standard-basic" type="text" label="Name" variant="standard" value={userInfo.name}
                     onChange={({ target }) =>

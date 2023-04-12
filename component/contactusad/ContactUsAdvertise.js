@@ -3,6 +3,7 @@ import React from 'react'
 import { pink } from '@mui/material/colors';
 import CallIcon from '@mui/icons-material/Call';
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 const ContactUsAdvertise = () => {
@@ -26,12 +27,13 @@ const ContactUsAdvertise = () => {
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim  velit esse cillum dolore eu fugiat nulla pariatur.</Typography>
                 <Stack direction="row" spacing={2}>
-                    <Button color="error" variant="contained" >
+                  <Link href=" /booking">  <Button color="error" variant="contained" >
                         Book a Schedule
                     </Button>
-                    <Button  startIcon={<CallIcon />}>
-                        Emergency Call
-                    </Button>
+                    </Link>
+                    
+                      <Link href="tel:+918007795515"> <Button  startIcon={<CallIcon />}>Emergency Call </Button></Link> 
+                   
                 </Stack>
             </Grid>
             <Grid textAlign='center' item xs={12} sm={12} md={6} lg={6} >

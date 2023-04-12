@@ -23,8 +23,10 @@ const HeaderComponent = () => {
     return (
         <>
             <Box sx={{ display: { xs: 'none', md: 'block' } }}>
-                <Grid container justifyContent="space-around" px={10} pt={1} alignItems="center" >
-                    <Grid item md={4} lg={4} >
+                <Grid container  justifyContent="space-around" px={10} pt={1} alignItems="center" >
+                    <Grid item display={"flex"}  md={4} lg={4} >
+                    <Avatar  alt="Travis Howard" src="https://www.creativehatti.com/wp-content/uploads/2022/07/Pet-lover-vector-mascot-logo-template-55-small.jpg" />
+         
                         <Typography fontFamily='Monospace' fontSize={25} fontWeight="bold" color="000000" >Mew</Typography>
                     </Grid>
                     <Grid item display={"flex"} justifyContent="space-around" md={4} lg={4}>
@@ -57,7 +59,7 @@ const HeaderComponent = () => {
                                 'aria-labelledby': 'basic-button',
                             }}
                         >
-                            <MenuItem onClick={handleClose}>Profile</MenuItem>
+                            <MenuItem onClick={handleClose}> <Link href="/profile">Profile</Link></MenuItem>
                             <MenuItem onClick={handleClose}>Logout</MenuItem>
                         </Menu>
                         </>) : <Button variant='outlined' onClick={() => { signIn(); }} >sign in</Button>}
@@ -69,6 +71,8 @@ const HeaderComponent = () => {
             <Box sx={{ display: { xs: 'block', md: 'none' } }}>
                 <Grid container pt={1} >
                     <Grid item pb={1} xs={12} textAlign="center" >
+                    {/* <Avatar  alt="Travis Howard" src="https://www.creativehatti.com/wp-content/uploads/2022/07/Pet-lover-vector-mascot-logo-template-55-small.jpg" /> */}
+         
                         <Button variant="outlined" onClick={handleOpen} startIcon={<MenuIcon />}>
                             Menu
                         </Button>

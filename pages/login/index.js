@@ -7,7 +7,7 @@ import Box from "@mui/material/Box";
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 
-import { Button, Card, CardContent, Checkbox, FormControl, FormControlLabel, FormGroup, Grid, IconButton, Input, InputAdornment, InputLabel, Link, TextField, Typography } from "@mui/material";
+import { Avatar, Button, Card, CardContent, Checkbox, FormControl, FormControlLabel, FormGroup, Grid, IconButton, Input, InputAdornment, InputLabel, Link, TextField, Typography } from "@mui/material";
 import { pink } from "@mui/material/colors";
 
 const SignIn = () => {
@@ -54,7 +54,12 @@ const SignIn = () => {
             <form onSubmit={handleSubmit}>
               <Card >
                 <CardContent>
-                  <Typography p={3} >Sign In</Typography>
+                  <div style={{ justifyContent: "center", display: "flex" }}>
+                <Avatar  alt="Travis Howard" src="https://www.creativehatti.com/wp-content/uploads/2022/07/Pet-lover-vector-mascot-logo-template-55-small.jpg" />
+                </div>
+                <Typography p={1} >Sign In</Typography>
+               
+                  
                   <TextField fullWidth id="standard-basic" type="email" label="Username" variant="standard" value={userInfo.email}
                     onChange={({ target }) =>
                       setUserInfo({ ...userInfo, email: target.value })
