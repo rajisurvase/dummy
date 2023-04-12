@@ -1,5 +1,5 @@
 import { Visibility } from '@mui/icons-material'
-import { Box, Button, Card, CardContent, Checkbox, FormControl, FormControlLabel, FormGroup, Grid, IconButton, Input, InputAdornment, InputLabel, TextField, Typography } from '@mui/material'
+import { Avatar, Box, Button, Card, CardContent, Checkbox, FormControl, FormControlLabel, FormGroup, Grid, IconButton, Input, InputAdornment, InputLabel, TextField, Typography } from '@mui/material'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import React, { useState } from 'react'
@@ -8,15 +8,12 @@ import { pink } from '@mui/material/colors';
 const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false)
   const [userInfo, setUserInfo] = useState({ name: "", email: "", number: "", password: "", confirmPassword: "" });
-  // const [userName,setUserName] = useState()
   const router = useRouter()
 
   const handleSubmit = async (e) => {
-    // validate your userinfo
     e.preventDefault();
      console.log(userInfo)
   }
-  // const [showPassword, setShowPassword] = React.useState(false);
 
   const handleClickShowPassword = () => setShowPassword((show) => !show);
 

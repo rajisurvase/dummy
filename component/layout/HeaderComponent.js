@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu';
 import Link from 'next/link';
 import { signIn, useSession } from 'next-auth/react';
+import HeaderProfile from './headerProfile';
 
 const HeaderComponent = () => {
     const { data: session } = useSession()
@@ -12,18 +13,11 @@ const HeaderComponent = () => {
         setOpen(!open)
     }
 
-    const [anchorEl, setAnchorEl] = React.useState(null);
-    const open2 = Boolean(anchorEl);
-    const handleClick = (event) => {
-        setAnchorEl(event.currentTarget);
-    };
-    const handleClose = () => {
-        setAnchorEl(null);
-    };
+    
     return (
         <>
             <Box sx={{ display: { xs: 'none', md: 'block' } }}>
-                <Grid container  justifyContent="space-around" px={10} pt={1} alignItems="center" >
+                <Grid container   px={10} pt={1} alignItems="center" >
                     <Grid item display={"flex"} alignItems={'center'}  md={4} lg={4} >
                       <Avatar sx={{ width: 80, height: 80 }}  alt="Travis Howard" src="https://www.creativehatti.com/wp-content/uploads/2022/07/Pet-lover-vector-mascot-logo-template-55-small.jpg" />
                        <Typography fontFamily='Monospace' fontSize={25} fontWeight="bold" color="000000" >Mew</Typography>
@@ -42,27 +36,16 @@ const HeaderComponent = () => {
                             <Typography>Facilities</Typography>
                         </Link>
                     </Grid>
-                    <Grid textAlign={"right"} item md={4} lg={4}>
+                    <Grid textAlign={"right"}  item md={4} lg={4}>
                         {session ? (<>
-                            <Stack onClick={handleClick} direction="row-reverse" alignItems='center' textAlign={"right"} spacing={2}>
+                            {/* <Stack onClick={handleClick} direction="row-reverse" alignItems='center' textAlign={"right"} spacing={2}>
                                 <Typography> {session?.user?.name}</Typography>
                                 <Avatar alt="Travis Howard" src="https://pps.whatsapp.net/v/t61.24694-24/340349463_600118588812810_3148407190670697096_n.jpg?ccb=11-4&oh=01_AdTOZHdkVp6cE-qzRohHz8P47s0Q7lEZBAcj-fDr2uSMRg&oe=64424F50" />
-
-                            </Stack>
-                            <Menu
-                            id="basic-menu"
-                            anchorEl={anchorEl}
-                            open={open2}
-                            onClose={handleClose}
-                            MenuListProps={{
-                                'aria-labelledby': 'basic-button',
-                            }}
-                        >
-                            <MenuItem onClick={handleClose}> <Link href="/profile">Profile</Link></MenuItem>
-                            <MenuItem onClick={handleClose}>Logout</MenuItem>
-                        </Menu>
+                            </Stack> */}
+                            <HeaderProfile session={session} />
+                           
                         </>) : <Button variant='outlined' onClick={() => { signIn(); }} >sign in</Button>}
-                       
+                         
                     </Grid>
                     
                 </Grid>
