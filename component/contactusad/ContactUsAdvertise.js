@@ -27,7 +27,7 @@ const ContactUsAdvertise = () => {
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim  velit esse cillum dolore eu fugiat nulla pariatur.</Typography>
                 <Stack direction="row" spacing={2}>
-                  <Link href=" /booking">  <Button color="error" variant="contained" >
+                  <Link href=" /booking">  <Button color="error" sx={{bgcolor:"#FF5B2E"}} variant="contained" >
                         Book a Schedule
                     </Button>
                     </Link>

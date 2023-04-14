@@ -31,7 +31,7 @@ const SignUp = () => {
               <Card>
                 <CardContent>
                 <div style={{ justifyContent: "center", display: "flex" }}>
-                <Avatar  alt="Travis Howard" src="https://www.creativehatti.com/wp-content/uploads/2022/07/Pet-lover-vector-mascot-logo-template-55-small.jpg" />
+                <Avatar sx={{ width: 80, height: 80 }} alt="Travis Howard" src="https://www.creativehatti.com/wp-content/uploads/2022/07/Pet-lover-vector-mascot-logo-template-55-small.jpg" />
                 </div>
                   <Typography >Sign Up</Typography>
                  

@@ -1,4 +1,5 @@
 import { Avatar, Box, Button, Card, CardActions, CardContent, Grid, Paper, Typography } from '@mui/material'
+import Link from 'next/link'
 import React from 'react'
 
 const Services = () => {
@@ -101,7 +102,7 @@ const Services = () => {
                 </Grid>
             </Grid>
             <Box textAlign="center" py={3} >
-            <Button sx={{bgcolor:"#FF5B2E"}} variant='contained' >Learn More</Button>
+        <Link href="/services"> <Button sx={{bgcolor:"#FF5B2E"}} variant='contained' >Learn More</Button> </Link>  
             </Box>
         </Box>
     )

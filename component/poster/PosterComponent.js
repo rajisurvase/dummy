@@ -1,4 +1,5 @@
 import { Avatar, AvatarGroup, Box, Button, Grid, Typography } from '@mui/material'
+import Link from 'next/link'
 import React from 'react'
 
 const PosterComponent = () => {
@@ -21,7 +22,7 @@ const PosterComponent = () => {
                     <Typography sx={{ fontWeight: "bolder" }} fontFamily='Monospace' fontSize={35} fontWeight={50} color="000000" >We take care of your pet and help them to grow</Typography>
                     <Typography pt={2} fontSize={20} fontFamily='Poppins' >Best pets are waiting for adoption. Find out the the perfect one you will like it. It’s our promise.</Typography>
                     <Box display={"flex"} sx={{ mt: { xs: 0, md: 2 }, justifyContent :{ xs :'center', md:"left"} }} py={2} alignContent="center"  >
-                        <Button size='small' variant='contained' sx={{ backgroundColor: "#FF5B2E" }} >Contact us</Button>
+                    <Link href="/contact" >  <Button size='small' variant='contained' sx={{ backgroundColor: "#FF5B2E" }} >Contact us</Button></Link>
                         <AvatarGroup max={4} sx={{ px: 2 }} >
                             <Avatar sx={{ width: 48, height: 48 }} alt="Remy Sharp" src="https://assets.vogue.in/photos/62502b8d90038a40f11ff27c/2:3/w_2560%2Cc_limit/Dog%25202.png" />
                             <Avatar sx={{ width: 48, height: 48 }} alt="Travis Howard" src="https://www.portphillip.vic.gov.au/media/l4bc2xgo/copp_local-laws_pets-of-port-phillip_web-banner_0622.jpg?center=0.57191619158284612,0.52646229440739711&mode=crop&width=710&height=710&rnd=133005394387900000" />

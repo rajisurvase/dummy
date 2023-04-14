@@ -1,8 +1,22 @@
 import React from 'react'
+
 import { Avatar, Box, Button, Card, CardMedia, CardContent, Grid, Stack, Typography, IconButton } from '@mui/material'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 const BlogComponent = () => {
+
+    const router = useRouter()
+
+	const goBack = () => {
+	router.back()
+	}
+    const goToNext = () => {
+        router.push("/login")
+        }
+    
+
     return (
         <Box sx={{ px: { xs: 4, md: 10 }, py: { xs: 0, md: 4 }, backgroundColor: "#fcf4eb" }}>
             <Grid container spacing={1}>
@@ -10,7 +24,7 @@ const BlogComponent = () => {
                     <Typography fontFamily='Monospace' fontSize={25} fontWeight="bold" color="000000" >DaCode Blog</Typography>
                     <Typography>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  velit esse cillum dolore eu fugiat nulla pariatur.</Typography>
                     <Box py={3} >
-                        <Button sx={{ bgcolor: "#FF5B2E" }} variant='contained' >Learn More</Button>
+                      <Link href="/blog">  <Button sx={{ bgcolor: "#FF5B2E" }} variant='contained' >Learn More</Button></Link>
                     </Box>
                 </Grid>
                 <Grid item xs={12} md={6} >
@@ -25,10 +39,10 @@ const BlogComponent = () => {
                                 <Typography py={1} fontWeight='bold' fontFamily='Poppins'>Why Your SaaS Business should use WordPress</Typography>
                                 <Typography >A content management system like WordPress can help you build a highly engaging website for your SaaS business, with little to no effort</Typography>
                                <div style={{textAlign:'center'}} >
-                               <IconButton sx={{bgcolor:'red'}} size="small">
+                               <IconButton sx={{bgcolor:'red'}} size="small" onClick={goBack}>
                                          <ArrowBackIcon  />
                                     </IconButton>
-                                    <IconButton sx={{bgcolor:'red', mx: 2}} size="small">
+                                    <IconButton sx={{bgcolor:'red', mx: 2}} size="small" onClick={goToNext}>
                                          <ArrowForwardIcon />
                                     </IconButton>
                                </div>

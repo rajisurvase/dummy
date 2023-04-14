@@ -55,8 +55,12 @@ const FooterComponent = () => {
           <Grid container >
             <Grid item xs={4} >
             {handleTypography('Useful links')}
+            <Link href="/faq" style={{textDecoration: 'none'}}>
              {handleFooter('FAQs')}
+             </Link>
+             <Link href="/product" style={{textDecoration: 'none'}}>
              {handleFooter('Shops')}
+             </Link>
              <Link href="/terms_conditions" style={{textDecoration: 'none'}}>
              {handleFooter(' Privacy Policy')}
              </Link>

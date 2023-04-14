@@ -55,9 +55,9 @@ const SignIn = () => {
               <Card >
                 <CardContent>
                   <div style={{ justifyContent: "center", display: "flex" }}>
-                <Avatar  alt="Travis Howard" src="https://www.creativehatti.com/wp-content/uploads/2022/07/Pet-lover-vector-mascot-logo-template-55-small.jpg" />
+                <Avatar  sx={{ width: 80, height: 80 }} alt="Travis Howard" src="https://www.creativehatti.com/wp-content/uploads/2022/07/Pet-lover-vector-mascot-logo-template-55-small.jpg" />
                 </div>
-                <Typography p={1} >Sign In</Typography>
+                <Typography >Sign In</Typography>
                
                   
                   <TextField fullWidth id="standard-basic" type="email" label="Username" variant="standard" value={userInfo.email}
@@ -65,7 +65,7 @@ const SignIn = () => {
                       setUserInfo({ ...userInfo, email: target.value })
                     } />
 
-                  <FormControl fullWidth variant="standard">
+                  <FormControl fullWidth sx={{ mt: 2 }} variant="standard">
                     <InputLabel htmlFor="standard-adornment-password">Password</InputLabel>
                     <Input
                       id="standard-adornment-password"
